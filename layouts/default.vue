@@ -1,5 +1,12 @@
 <template>
   <div>
+    <div class="main">
+      <div class="main-links">
+        <nuxt-link to="/">Home Page</nuxt-link>|
+        <nuxt-link to="secret">Secret</nuxt-link>|
+        <nuxt-link to="login">Log in</nuxt-link>|
+      </div>
+    </div>
     <Nuxt />
   </div>
 </template>
