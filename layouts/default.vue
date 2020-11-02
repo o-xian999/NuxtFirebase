@@ -35,8 +35,16 @@ export default {
         if(user){
           console.log('logged in');
           this.loggedIn = true;
+          firebase
+            .auth()
+            .currentUser
+            .getIdToken(true)
+            .then(token => {
+              Cookies.set('access_token', token);
+          })
         } else {
           this.loggedIn = false;
+          Cookies.remove('access_token')
         }
       })
     },
