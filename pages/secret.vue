@@ -9,14 +9,13 @@ import { firebase } from '@firebase/app'
 import '@firebase/auth'
 export default {
   asyncData({req, redirect}){
-    if(process.server){
-      
-    } else {
+    // if(process.server){
+    // } else {
       let user = firebase.auth().currentUser;
       if(!user){
-      redirect("/login")
-    }
-    }
+        redirect("/login")
+      }
+    // }
     
     
   }
