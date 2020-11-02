@@ -5,9 +5,22 @@
 </template>
 
 <script>
-  export default {
+import { firebase } from '@firebase/app'
+import '@firebase/auth'
+export default {
+  asyncData({req, redirect}){
+    if(process.server){
+      
+    } else {
+      let user = firebase.auth().currentUser;
+      if(!user){
+      redirect("/login")
+    }
+    }
+    
     
   }
+}
 </script>
 
 <style lang="scss" scoped>
