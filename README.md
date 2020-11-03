@@ -1,6 +1,11 @@
 # NuxtFirebase
 
-## Build Setup
+Nuxt と Firebase でログイン機能を実装する実験
+
+参考
+
+- [Server-Side Render Vue Apps with Nuxt.js And Firebase! App Example](https://www.youtube.com/watch?v=TjQsOy-8Wqo&t=486s)
+- [Server-Side Render Vue Apps with Nuxt.js And Firebase! Part 2](https://www.youtube.com/watch?v=ix22-aX69qo)
 
 ```bash
 # install dependencies
@@ -16,5 +21,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
