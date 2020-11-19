@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <h3>Login Vue</h3>
-    <form @submit.prevent="pressed">
+    <!-- <form @submit.prevent="pressed">
       <div class="login">
         <input type="text" placeholder="email@email.." v-model="email" />
       </div>
@@ -9,7 +9,7 @@
         <input type="password" placeholder="password" v-model="password" />
       </div>
       <button>Login</button>
-    </form>
+    </form> -->
     <div class="error" v-if="error">{{error.message}}</div>
   </div>
 </template>
